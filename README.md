@@ -153,19 +153,4 @@ So sensitive files are not pushed to GitHub.
 
 ---
 
-## 🤝 Contributing
 
-Feel free to fork the repository and submit pull requests.
-
----
-
-## 👨‍💻 Author
-
-**Ashish Bhosale**  
-GitHub: [@your-username](https://github.com/your-username)
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
