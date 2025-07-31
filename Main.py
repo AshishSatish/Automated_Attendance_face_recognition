@@ -87,9 +87,11 @@ while True:
 
                 if secondsElapsed > 30:
                     ref = db.reference(f'Students/{id}')
+                    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     studentInfo['total_attendance'] += 1
                     ref.child('total_attendance').set(studentInfo['total_attendance'])
-                    ref.child('last_attendance_time').set(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+                    ref.child('last_attendance_time').set(now)
+                    ref.child('attendance_log').push(now)
                 else:
                     modeType = 3
                     counter = 0
@@ -142,4 +144,3 @@ while True:
     if key == ord('q') or cv2.getWindowProperty("Face Attendance", cv2.WND_PROP_VISIBLE) < 1:
         print("❎ Exiting...")
         break
-
