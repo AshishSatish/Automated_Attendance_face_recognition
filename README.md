@@ -145,6 +145,25 @@ So sensitive files are not pushed to GitHub.
 
 ---
 
+## 📈 Power BI Dashboard
+
+A companion Power BI dashboard is included to visualize attendance data.
+
+### 🔧 Setup
+
+1. Open `AttendanceProject.pbix` in Power BI Desktop.
+2. Go to **Home > Transform Data** to open the Power Query Editor.
+3. In the **Queries** pane, select your data source.
+4. Click **Advanced Editor** (from the toolbar).
+5. Update the source path or URL to match your Firebase export or local file.
+6. Click **Done** and then **Close & Apply**.
+
+### 🚀 Use
+
+- Use slicers (like PRN search) to filter records.
+- View weekly trends, student logs, and total attendance summaries.
+
+
 ## 💡 Tips
 
 - Use clear, well-lit images for better accuracy.
